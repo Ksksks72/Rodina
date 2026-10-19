@@ -1,0 +1,135 @@
+.vacancii-hero {
+    background-image: url(../../img/vacancii/fon_people.png);
+    width: 100%;
+    min-height: 422px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.vacancii-hero-text {
+    padding-top: 45px;
+    width: 682px;
+}
+
+.vacancii-hero-text h6{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.vacancii-hero-text h1 {
+    margin-bottom: 28px;
+}
+
+.yslovia {
+    background-color: #FAF8EE;
+    width: 100%;
+    min-height: 515px;
+}
+
+.yslovia-block {
+    padding: 30px 0 30px;
+    display: flex;
+    gap: 85px;
+}
+
+.yslovia-left {
+    width: 375px;
+    display: grid;
+    gap: 30px;
+}
+
+.yslovia-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0c4216;
+    border-radius: 8px;
+    width: 263px;
+    height: 52px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.yslovia-btn a {
+    font-size: 15px;
+    font-family: Golos-Text_Regular;
+    color: #0C4216;
+}
+
+.yslovia-card {
+    display: grid;
+    gap: 16px;
+    width: 230px;
+}
+
+.yslovia-card h3 {
+    color: #0c4216;
+}
+
+.yslovia-grid-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.vacancii-card {
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    width: 575px;
+    height: 641px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 18px;
+    gap: 13px;
+}
+
+.vacancii {
+    margin-bottom: 78px;
+    margin-top: 30px;
+}
+
+.vacancii-text {
+    display: grid;
+    gap: 26px;
+}
+
+.vacancii-card-text {
+    display: grid;
+    gap: 13px;
+    margin-left: 18px;
+}
+
+.vacancii-card-text h3 {
+    color: #0C4216;
+}
+
+.vacancii-card-text h2 {
+    font-size: 32px;
+}
+
+.vacancii-block-btn {
+    width: 539px;
+    height: 45px;
+    background-color: #4A7B29;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacancii-block-btn a {
+    font-family: Golos-Text_SemiBold;
+    color: white;
+    font-size: 20px;
+}
+
+.vacancii-grid-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 26px;
+}
+

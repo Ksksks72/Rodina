@@ -1,0 +1,154 @@
+.products-hero{
+    background-image: url(../../img/products/fon_milk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 422px;
+}
+
+.products-hero-text {
+    width: 682px;
+    padding-top: 45px;
+}
+
+.products-hero-text h6 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.products-hero-text h3 {
+    margin-top: 28px;
+}
+
+.products {
+    padding-top: 30px;
+    display: grid;
+    gap: 47px;
+    margin-bottom: 75px;
+}
+
+.products-text {
+    display: grid;
+    gap: 30px;
+}
+
+.products-text h2 {
+    color: #0C4216;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.products-grid_card {
+    border: 1px solid #C7C7C7;
+    border-radius: 20px;
+    height: 460px;
+    display: flex;             
+    flex-direction: column;    
+    overflow: hidden;          
+}
+
+.products-grid_card-text {
+    display: grid;
+    gap: 6px;
+    margin-top: 0;
+    padding: 12px 37px 21px 37px;
+    height: 120px;
+}
+
+.products-grid_card-text h3 {
+    color: #0C4216;
+}
+
+.products-grid_card-text ul {
+    display: grid;
+    gap: 0;
+}
+
+.products-grid_card-text li {
+    font-size: 14px;
+    font-family: Golos-Text_Regular;
+    color: #0C4216;
+}
+
+.products-grid_card-btn {
+    background-color: #4A7B29;
+    width: 310px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-grid_card-btn a {
+    color: white;
+    font-size: 16px;
+    font-family: Golos-Text_SemiBold;
+}
+
+.products-grid_card-block-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-zayavka {
+    background-image: url(../../img/products/fon_cow.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 381px;
+}
+
+.products-zayavka-left {
+    background-color: rgba(10, 36, 15, 0.82);
+    min-height: 381px;
+    width: 50%;
+}
+
+.zayavka-block {
+    display: grid;
+    gap: 60px;
+    justify-content: flex-end;
+    margin-right: 199px;
+}
+
+.products-zayavka-left h6, h2{
+    color: white;
+}
+
+.zayavka-text {
+    width: 401px;
+    padding-top: 30px;
+    display: grid;
+    gap: 30px;
+}
+
+.zayavka-text h3{
+    font-size: 18px;
+    font-family: Golos-Text_Regular;
+} 
+
+.products-zayavka-btn {
+    background-color: rgba(199, 199, 199, 0.44);
+    border-radius: 10px;
+    width: 304px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-zayavka-btn a {
+    color: white;
+    font-family: Golos-Text_SemiBold;
+    font-size: 16px;
+}
+
+

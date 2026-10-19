@@ -1,0 +1,610 @@
+@font-face {
+  font-family: Golos-Text_Regular;
+  src: url(../fonts/Golos-Text_Regular.ttf);
+}
+
+@font-face {
+  font-family: Golos-Text_SemiBold;
+  src: url(../fonts/golos-text-semibold.ttf);
+}
+
+@font-face {
+    font-family: Golos-Text_Bold;
+    src: url(../fonts/Golos-Text_Bold.ttf);
+}
+
+@font-face {
+    font-family: Golos-Text_Medium;
+    src: url(../fonts/Golos-Text_Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #FFFCF4
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 0 15px; */
+}
+
+header {
+    display: flex;
+    gap: 148px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.header_btn {
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    width: 512px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Golos-Text_Bold;
+    font-size: 48px;
+    color: #FFFCF4;
+}
+
+h3 {
+    font-size: 20px;
+    color: #FFFCF4;
+    font-family: Golos-Text_SemiBold;
+}
+
+header img{
+    width: 222px;
+}
+
+ul a{
+    color: #0C4216;
+    font-family: Golos-Text_Regular;
+    font-style: 18px;
+}
+
+h6 {
+    font-size: 18px;
+    font-family: Golos-Text_Regular;
+    color: #0C4216;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: Golos-Text_SemiBold;
+    color: #0C4216;
+}
+
+p {
+    font-size: 15px;
+    font-family: Golos-Text_Regular;
+    color: #0C4216;
+    line-height: 150%;
+}
+
+h4 {
+    color: #fff;
+    font-size: 30px;
+    font-family: Golos-Text_SemiBold;
+    text-align: center;
+    height: 72px;
+}
+
+h5 {
+    font-family: Golos-Text_Medium;
+    font-size: 16px;
+    color: #000;
+}
+
+.header_btn{
+    display: flex;
+    gap: 12px;
+}
+
+.header_btn a{
+    color: #FFFCF4;
+    font-family: Golos-Text_SemiBold;
+    margin-top: -3px;
+}
+
+.round_btn {
+    background-color: #4A7B29;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.squart_btn{
+    width: 144px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: #4A7B29;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_left {
+    display: flex;
+    gap: 122px;
+}
+
+
+.hero {
+    min-height: 422px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-bg.active {
+    opacity: 1;
+}
+
+.hero-bg-1 { background-image: url('../img/base/fon_traktor\ 1.png'); }
+.hero-bg-2 { background-image: url('../img/base/fon_3.png'); }
+.hero-bg-3 { background-image: url('../img/base/fon_4.png'); } 
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.hero-content.show > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-content.show h1 { transition-delay: 0.2s; }
+.hero-content.show h3 { transition-delay: 0.4s; }
+.hero-content.show .hero_btn { transition-delay: 0.6s; }
+
+.hero_block{
+    display: grid;
+    gap: 49px;
+}
+
+.hero_text {
+    padding-top: 77px;
+    width: 682px;
+    display: grid;
+    gap: 33px;
+}
+
+.hero_btn {
+    background: rgba(74, 123, 41, 0.88);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_btn a {
+    color: #FFFCF4;
+    font-size: 16px;
+    font-family: Golos-Text_SemiBold;
+}
+
+.info_block {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.info_block_card{
+    display: flex;
+    gap: 28px;
+}
+
+.info_block_card h5{
+    font-family: Golos-Text_Medium;
+    font-size: 16px;
+    color: #000;
+}
+
+.info_block_card p {
+    font-family: Golos-Text_Regular;
+    font-size: 14px;
+}
+
+.info_card {
+    display: flex;
+    gap: 18px;
+    max-width: 267px;
+}
+
+.info_card_text {
+    display: grid;
+    gap: 7px;
+}
+
+.info_card_img{
+    display: flex;
+    align-items: flex-end;
+}
+
+.about-us_left {
+    width: 580px;
+    display: grid;
+}
+
+.about-us_block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-us-text h2 {
+    margin: 8px 0 19px 0;
+}
+
+.about-us {
+    background-color: #FAF8EE;
+}
+
+.about-us_btn {
+    border-radius: 10px;
+    width: 350px;
+    height: 50px;
+    background-color: #4A7B29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 31px;
+}
+
+.about-us_btn a {
+    font-family: Golos-Text_SemiBold;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.about-us_right-top {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(241, 241, 232, 0.84);
+    display: grid;
+    gap: 6px;
+}
+
+.about-us_right-top h5 {
+    font-size: 16px;
+    font-family: Golos-Text_Medium;
+}
+
+.about-us_right-top p {
+    font-size: 14px;
+    color: #000;
+}
+
+.about-us_right {
+    position: relative;
+}
+
+.product-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-text_right {
+    display: flex;
+    align-items: flex-end;
+}
+
+.product-text_right a {
+    color: #0C4216;
+    font-family: Golos-Text_SemiBold;
+    font-size: 18px;
+}
+
+.product-text_left {
+    width: 448px;
+}
+
+.product-card {
+    border: 1px solid rgba(199, 199, 199, 0.44);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 224px;
+}
+
+.product-card p {
+    font-family: Golos-Text_Regular;
+    font-size: 12px;
+    width: 240px;
+}
+
+.product-card h5 {
+    font-family: Golos-Text_Medium;
+    font-size: 16px;
+    color: #0C4216;
+    margin: 8px 0 7px 0;
+}
+
+.product-card-block {
+    display: flex;
+    gap: 26px;
+    margin-top: 42px;
+}
+
+.product-card_text_left {
+    margin: 0 20px 0 20px;
+}
+
+.product-card_text {
+    margin-left: 20px;
+}
+
+.product-text h2{
+    margin: 8px 0 19px 0;
+}
+
+.product{
+    margin: 30px 0 80px 0;
+}
+
+.doverie {
+    background-image: url(../img/base/фон.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+}
+
+.doverie h2 {
+    color: #fff;
+    padding-top: 30px;
+    margin-bottom: 41px;
+}
+
+.doverie-block {
+    display: flex;
+    gap: 50px;
+    height: 151px;
+    margin-bottom: 35px;
+}
+
+.doverie-block img {
+    margin-top: 36px;
+}
+
+.doverie-block_card p {
+    color: #fff;
+    font-size: 18px;
+    font-family: Golos-Text_Regular;
+    text-align: center;
+}
+
+.doverie-block_card {
+    max-width: 212px;
+    display: grid;
+    gap: 13px;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-left_contact {
+    display: grid;
+    gap: 2px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.address-left a {
+    font-family: Golos-Text_SemiBold;
+    font-size: 20px;
+    color: #0C4216;
+    font-weight: 600;
+
+}
+
+.address-left {
+    width: 309px;
+}
+
+footer {
+    background-color: #14240F;
+    height: 230px;
+}
+
+.footer-block {
+    padding-top: 32px;
+}
+
+.footer-top {
+    display: flex;
+    gap: 132px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(199, 199, 199, 53);
+}
+
+.footer-top_left {
+    display: flex;
+    gap: 72px;
+}
+
+.footer-top_left a {
+    color: #fff;
+    font-size: 15px;
+    font-family: Golos-Text_Regular;
+}
+
+.footer-top_left ul {
+    display: flex;
+    gap: 35px;
+}
+
+.footer-top_left nav {
+    width: 406px;
+    align-items: center;
+}
+
+.footer-top_right {
+    display: flex;
+    gap: 29px;
+}
+
+.footer-top_right a {
+    color: #fff;
+    font-size: 12px;
+    font-family: Golos-Text_Regular;
+}
+
+.footer_btn {
+    display: grid;
+    gap: 8px;
+}
+
+.footer_address {
+    width: 172px;
+    display: flex;
+    gap: 5px;
+    align-items: flex-start
+}
+
+.footer_address img {
+    width: 9px;
+    margin-top: 4px;
+}
+
+.footer_address a{
+    color: #fff;
+    font-size: 12px;
+    font-family: Golos-Text_Regular;
+    line-height: 150%;
+}
+
+.footer-bottom {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 12px;
+    font-family: Golos-Text_Regular;
+}
+
+
+
+
+.squart_btn:hover, 
+.round_btn:hover, 
+.about-us_btn:hover,
+.komanda-btn:hover,
+.products-grid_card-btn:hover,
+.products-zayavka-btn:hover,
+.vacancii-block-btn:hover {
+    background-color: #0C4216;
+    color: #FFFCF4;
+    transition: all 0.6s ease;
+}
+
+.product-text_right:hover {
+    transform: scale(1.05);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.hero_btn:hover {
+    background: #0C4216;
+    opacity: 0.88;
+}
+
+.yslovia-btn:hover {
+    background-color: #0C4216;
+    color: #FAF8EE;
+}
+
+.yslovia-btn:hover a {
+    color: white;
+}
+
+
+/* Стили для активного пункта меню */
+nav ul li a.active {
+    color: #4A7B29; /* Ваш фирменный зеленый цвет */
+    border-bottom: 2px solid #4A7B29; /* Подчеркивание */
+    padding-bottom: 5px; /* Отступ от текста до линии */
+}
+
+/* Стили для активного пункта в подвале (чтобы было белым) */
+footer nav ul li a.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+
+
+
+
