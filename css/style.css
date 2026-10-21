@@ -129,6 +129,20 @@ h5 {
     color: #000;
 }
 
+.site-header {
+    position: sticky;   
+    top: 0;              
+    z-index: 100;    
+    background-color: #FFFCF4;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
 .header_btn{
     display: flex;
     gap: 12px;
@@ -567,7 +581,7 @@ footer {
 .vacancii-block-btn:hover {
     background-color: #0C4216;
     color: #FFFCF4;
-    transition: all 0.6s ease;
+    transition: all 0.3s ease;
 }
 
 .product-text_right:hover {
