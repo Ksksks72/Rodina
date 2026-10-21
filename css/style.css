@@ -619,6 +619,195 @@ footer nav ul li a.active {
 }
 
 
+/* .modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  padding: 20px;
+  background: rgba(20, 30, 20, 0.6);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #fffcf4;
+  background-image:
+    linear-gradient(#fffcf4ee, #fffcf4ee),
+    url("images/modal-bg.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 20px 60px #0003;
+}
+
+.modal-card h2 {
+  color: #31583a;
+  margin-top: 0;
+}
+
+.modal-card label {
+  display: block;
+  margin: 14px 0 6px;
+  color: #31583a;
+  font-weight: 600;
+}
+
+.modal-card input,
+.modal-card select,
+.modal-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d5dacd;
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+}
+
+.modal-card button[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #31583a;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: 0;
+  background: transparent;
+  color: #31583a;
+  font-size: 28px;
+  cursor: pointer;
+} */
+
+
+/* --- Фон модального окна (затемнение) --- */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    
+    /* Ваш запрошенный фон */
+    background: rgba(20, 30, 20, 0.6);
+    backdrop-filter: blur(4px);
+    
+    align-items: center;
+    justify-content: center;
+}
+
+/* Класс для открытия (добавляется через JS) */
+.modal.active {
+    display: flex;
+}
+
+/* --- Сама белая карточка --- */
+.modal-block {
+    background-color: #FFFCF4;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* --- Кнопка закрытия (крестик) --- */
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    font-family: Golos-Text_Regular;
+    color: #0C4216;
+    cursor: pointer;
+}
+
+/* --- Заголовок и текст --- */
+.modal-block h2 {
+    font-family: Golos-Text_SemiBold;
+    font-size: 28px;
+    color: #0C4216;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.modal-block p {
+    font-family: Golos-Text_Regular;
+    font-size: 15px;
+    color: #0C4216;
+    margin-bottom: 20px;
+}
+
+/* --- Подписи (label) --- */
+.modal-block label {
+    display: block;
+    font-family: Golos-Text_Regular;
+    font-size: 15px;
+    color: #0C4216;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* --- Поля ввода --- */
+.modal-block input,
+.modal-block select,
+.modal-block textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C7C7C7; /* Светло-серая рамка */
+    border-radius: 8px;
+    font-family: Golos-Text_Regular;
+    font-size: 15px;
+    color: #0C4216;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* УБИРАЕМ ЧЕРНУЮ ОБВОДКУ ПРИ КЛИКЕ */
+.modal-block input:focus,
+.modal-block select:focus,
+.modal-block textarea:focus {
+    outline: none; /* Убирает черную рамку браузера */
+    border-color: #4A7B29; /* Оставляет только вашу зеленую рамку */
+}
+
+/* --- Кнопка отправки --- */
+.modal-block button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #4A7B29;
+    color: #FFFCF4;
+    border: none;
+    border-radius: 8px;
+    font-family: Golos-Text_SemiBold;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 

@@ -26,7 +26,7 @@
                     <a href="#">✆</a>
                 </div>
                 <div class="squart_btn">
-                    <a href="#">Оставить заявку</a>
+                    <a href="#" onclick="openModal('vacancy'); return false;">Оставить заявку</a>
                 </div>
             </div>
         </div>    
@@ -108,7 +108,7 @@
                         <p>✓ Официальное трудоустройство<br> ✓ Зарплата по результатам собеседования<br> ✓ Служебное жильё для иногородних</p>
                     </div>
                     <div class="vacancii-block-btn">
-                        <a href="#">Откликнуться</a>
+                        <a href="#" onclick="openModal('vacancy'); return false;">Откликнуться</a>
                     </div>
                 </div>
                 <div class="vacancii-card">
@@ -124,7 +124,7 @@
                         <p>✓ Официальное трудоустройство<br> ✓ Современная техника<br> ✓ Спецодежда и питание</p>
                     </div>
                     <div class="vacancii-block-btn">
-                        <a href="#">Откликнуться</a>
+                        <a href="#" onclick="openModal('vacancy'); return false;">Откликнуться</a>
                     </div>
                 </div>
                 <div class="vacancii-card">
@@ -140,7 +140,7 @@
                         <p>✓ Официальное трудоустройство<br> ✓ Питание и спецодежда<br> ✓ Служебное жильё для иногородних</p>
                     </div>
                     <div class="vacancii-block-btn">
-                        <a href="#">Откликнуться</a>
+                        <a href="#" onclick="openModal('vacancy'); return false;">Откликнуться</a>
                     </div>
                 </div>
                 <div class="vacancii-card">
@@ -156,7 +156,7 @@
                         <p>✓ Официальное трудоустройство<br> ✓ Спецодежда и инструмент<br> ✓ Служебное жильё для иногородних</p>
                     </div>
                     <div class="vacancii-block-btn">
-                        <a href="#">Откликнуться</a>
+                        <a href="#" onclick="openModal('vacancy'); return false;">Откликнуться</a>
                     </div>
                 </div>
                 <div class="vacancii-card">
@@ -172,7 +172,7 @@
                         <p>✓ Официальное трудоустройство<br> ✓ Служебное жильё для иногородних<br> ✓ Питание и спецодежда</p>
                     </div>
                     <div class="vacancii-block-btn">
-                        <a href="#">Откликнуться</a>
+                        <a href="#" onclick="openModal('vacancy'); return false;">Откликнуться</a>
                     </div>
                 </div>
                 <div class="vacancii-card">
@@ -188,7 +188,7 @@
                         <p>✓ Официальное трудоустройство<br> ✓ Спецодежда и питание<br> ✓ Сменный график</p>
                     </div>
                     <div class="vacancii-block-btn">
-                        <a href="#">Откликнуться</a>
+                        <a href="#" onclick="openModal('vacancy'); return false;">Откликнуться</a>
                     </div>
                 </div>
                 <div class="vacancii-card">
@@ -204,7 +204,7 @@
                         <p>✓ Официальное трудоустройство<br> ✓ Пятидневная рабочая неделя<br> ✓ Служебное жильё для иногородних</p>
                     </div>
                     <div class="vacancii-block-btn">
-                        <a href="#">Откликнуться</a>
+                        <a href="#" onclick="openModal('vacancy'); return false;">Откликнуться</a>
                     </div>
                 </div>
                 <div class="vacancii-card">
@@ -220,7 +220,7 @@
                         <p>✓ Официальное трудоустройство<br> ✓ Пятидневная рабочая неделя<br> ✓ Служебное жильё для иногородних</p>
                     </div>
                     <div class="vacancii-block-btn">
-                        <a href="#">Откликнуться</a>
+                        <a href="#" onclick="openModal('vacancy'); return false;">Откликнуться</a>
                     </div>
                 </div>
             </div>
@@ -261,6 +261,55 @@
             </div>    
         </div>
     </footer>
+    <div class="modal" id="requestModal">
+        <div class="modal-block">
+            <button class="btn-close" type="button" onclick="closeModal()">×</button>
+            
+            <h2 id="modalTitle">Оформить заказ</h2>
+            <p id="modalDescription">Оставьте заявку, и мы свяжемся с вами</p>
+            
+            <form id="requestForm">
+                <div id="productField">
+                    <label for="product">Продукция</label>
+                    <select name="product" id="product">
+                        <option value="" disabled selected hidden></option>
+                        <option value="Зерно">Зерно</option>
+                        <option value="Молоко и молочная продукция">Молоко и молочная продукция</option>
+                        <option value="Мясо и субпродукты">Мясо и субпродукты</option>
+                        <option value="Корма и комбикорма">Корма и комбикорма</option>
+                        <option value="Полуфабрикаты">Полуфабрикаты</option>
+                        <option value="Многолетние культуры">Многолетние культуры</option>
+                    </select>
+                </div>
+
+                <div id="vacancyField" hidden>
+                    <label for="vacancy">Вакансия</label>
+                    <select id="vacancy" name="vacancy">
+                        <option value="" disabled selected hidden></option>
+                        <option value="Агроном">Агроном</option>
+                        <option value="Механизатор">Механизатор</option>
+                        <option value="Водитель грузового автомобиля">Водитель грузового автомобиля</option>
+                        <option value="Слесарь-ремонтник">Слесарь-ремонтник</option>
+                        <option value="Ветеринарный врач">Ветеринарный врач</option>
+                        <option value="Оператор машинного доения">Оператор машинного доения</option>
+                        <option value="Бухгалтер">Бухгалтер</option>
+                        <option value="Секретарь">Секретарь</option>
+                    </select>
+                </div>
+
+                <label for="name">Ваше имя *</label>
+                <input id="name" name="name" required>
+
+                <label for="contact">Телефон или email *</label>
+                <input id="contact" name="contact" required>
+
+                <label for="details" id="detailsLabel">Количество и комментарий</label>
+                <textarea id="details" name="details" rows="3"></textarea>
+                
+                <button type="submit" id="submitButton">Отправить заявку</button>
+            </form>
+        </div> 
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
