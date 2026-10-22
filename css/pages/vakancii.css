@@ -51,7 +51,7 @@
 }
 
 .yslovia-btn a {
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     font-family: Golos-Text_Regular;
     color: #0C4216;
 }
@@ -106,7 +106,7 @@
 }
 
 .vacancii-card-text h2 {
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
 }
 
 .vacancii-block-btn {
@@ -122,7 +122,7 @@
 .vacancii-block-btn a {
     font-family: Golos-Text_SemiBold;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
 }
 
 .vacancii-grid-block {
@@ -132,4 +132,3 @@
     gap: 50px;
     margin-top: 26px;
 }
-

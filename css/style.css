@@ -76,12 +76,12 @@ a {
 
 h1 {
     font-family: Golos-Text_Bold;
-    font-size: 48px;
+    font-size: 3rem; /* 48px */
     color: #FFFCF4;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     color: #FFFCF4;
     font-family: Golos-Text_SemiBold;
 }
@@ -97,19 +97,19 @@ ul a{
 }
 
 h6 {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     font-family: Golos-Text_Regular;
     color: #0C4216;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px */
     font-family: Golos-Text_SemiBold;
     color: #0C4216;
 }
 
 p {
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     font-family: Golos-Text_Regular;
     color: #0C4216;
     line-height: 150%;
@@ -117,7 +117,7 @@ p {
 
 h4 {
     color: #fff;
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px */
     font-family: Golos-Text_SemiBold;
     text-align: center;
     height: 72px;
@@ -125,7 +125,7 @@ h4 {
 
 h5 {
     font-family: Golos-Text_Medium;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     color: #000;
 }
 
@@ -158,7 +158,7 @@ h5 {
     background-color: #4A7B29;
     width: 40px;
     height: 40px;
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -169,7 +169,7 @@ h5 {
     width: 144px;
     height: 40px;
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     background-color: #4A7B29;
     border-radius: 40px;
     display: flex;
@@ -253,7 +253,7 @@ h5 {
 
 .hero_btn a {
     color: #FFFCF4;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-family: Golos-Text_SemiBold;
 }
 
@@ -269,13 +269,13 @@ h5 {
 
 .info_block_card h5{
     font-family: Golos-Text_Medium;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     color: #000;
 }
 
 .info_block_card p {
     font-family: Golos-Text_Regular;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
 }
 
 .info_card {
@@ -327,7 +327,7 @@ h5 {
 
 .about-us_btn a {
     font-family: Golos-Text_SemiBold;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     text-align: center;
     color: #fff;
 }
@@ -346,12 +346,12 @@ h5 {
 }
 
 .about-us_right-top h5 {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-family: Golos-Text_Medium;
 }
 
 .about-us_right-top p {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     color: #000;
 }
 
@@ -372,7 +372,7 @@ h5 {
 .product-text_right a {
     color: #0C4216;
     font-family: Golos-Text_SemiBold;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
 }
 
 .product-text_left {
@@ -389,13 +389,13 @@ h5 {
 
 .product-card p {
     font-family: Golos-Text_Regular;
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     width: 240px;
 }
 
 .product-card h5 {
     font-family: Golos-Text_Medium;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     color: #0C4216;
     margin: 8px 0 7px 0;
 }
@@ -450,7 +450,7 @@ h5 {
 
 .doverie-block_card p {
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     font-family: Golos-Text_Regular;
     text-align: center;
 }
@@ -475,7 +475,7 @@ h5 {
 
 .address-left a {
     font-family: Golos-Text_SemiBold;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     color: #0C4216;
     font-weight: 600;
 
@@ -508,7 +508,7 @@ footer {
 
 .footer-top_left a {
     color: #fff;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     font-family: Golos-Text_Regular;
 }
 
@@ -529,7 +529,7 @@ footer {
 
 .footer-top_right a {
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     font-family: Golos-Text_Regular;
 }
 
@@ -552,7 +552,7 @@ footer {
 
 .footer_address a{
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     font-family: Golos-Text_Regular;
     line-height: 150%;
 }
@@ -565,7 +565,7 @@ footer {
 
 .footer-bottom p {
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     font-family: Golos-Text_Regular;
 }
 
@@ -740,7 +740,7 @@ footer nav ul li a.active {
     right: 20px;
     background: transparent;
     border: none;
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
     font-family: Golos-Text_Regular;
     color: #0C4216;
     cursor: pointer;
@@ -749,7 +749,7 @@ footer nav ul li a.active {
 /* --- Заголовок и текст --- */
 .modal-block h2 {
     font-family: Golos-Text_SemiBold;
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
     color: #0C4216;
     margin-top: 0;
     margin-bottom: 10px;
@@ -757,7 +757,7 @@ footer nav ul li a.active {
 
 .modal-block p {
     font-family: Golos-Text_Regular;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     color: #0C4216;
     margin-bottom: 20px;
 }
@@ -766,7 +766,7 @@ footer nav ul li a.active {
 .modal-block label {
     display: block;
     font-family: Golos-Text_Regular;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     color: #0C4216;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -781,7 +781,7 @@ footer nav ul li a.active {
     border: 1px solid #C7C7C7; /* Светло-серая рамка */
     border-radius: 8px;
     font-family: Golos-Text_Regular;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     color: #0C4216;
     background-color: #fff;
     box-sizing: border-box;
@@ -805,9 +805,6 @@ footer nav ul li a.active {
     border: none;
     border-radius: 8px;
     font-family: Golos-Text_SemiBold;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     cursor: pointer;
 }
-
-
-

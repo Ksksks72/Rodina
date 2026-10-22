@@ -80,7 +80,7 @@
 }
 
 .grid-card-text p{
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     color: #000;
     line-height: 110%;
 }
@@ -122,6 +122,6 @@
 
 .komanda-btn a {
     color: white;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-family: Golos-Text_SemiBold;
 }

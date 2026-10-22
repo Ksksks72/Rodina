@@ -71,7 +71,7 @@
 }
 
 .products-grid_card-text li {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
     font-family: Golos-Text_Regular;
     color: #0C4216;
 }
@@ -88,7 +88,7 @@
 
 .products-grid_card-btn a {
     color: white;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-family: Golos-Text_SemiBold;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .zayavka-text h3{
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     font-family: Golos-Text_Regular;
 } 
 
@@ -148,7 +148,5 @@
 .products-zayavka-btn a {
     color: white;
     font-family: Golos-Text_SemiBold;
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
 }
-
-
