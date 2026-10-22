@@ -1,0 +1,587 @@
+/* =========================================
+   1. АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ (до 992px)
+   ========================================= */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Шапка */
+    .site-header .container {
+        width: 100%;
+    }
+    .header_left {
+        gap: 40px;
+    }
+    nav ul {
+        gap: 20px;
+    }
+
+    /* Главный баннер */
+    .hero_text {
+        width: 100%;
+        padding-top: 60px;
+    }
+    h1 {
+        font-size: 2.375rem; /* 38px */
+    }
+
+    /* Блок с преимуществами (иконки) */
+    .info_block_card {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    .info_block_card > img {
+        display: none;
+    }
+
+    /* Блок "О компании" на главной */
+    .about-us_block {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about-us_left {
+        width: 100%;
+    }
+    .about-us_right img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Карточки продукции на главной */
+    .product-card-block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .product-card {
+        height: auto;
+    }
+    .product-card a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* Блок доверия (цифры) */
+    .doverie-block {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        height: auto;
+    }
+    .doverie-block > img {
+        display: none;
+    }
+    .doverie-block_card {
+        width: 40%;
+    }
+
+    /* Адрес и карта */
+    .address {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .address-left {
+        width: 100%;
+    }
+    .address-right img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    /* Подвал */
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-top_left {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Сетка карточек продукции на странице products */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products-grid_card {
+        height: auto;
+    }
+    .products-grid_card-btn {
+        width: 100%;
+    }
+    .products-grid_card-text {
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    /* Страница "О компании" */
+    .history-block {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+    }
+    .history-block_left, .history-block_right {
+        width: 100%;
+    }
+    .history-block_right img {
+        width: 100%;
+    }
+    .history {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    
+    .principi {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .principi-left img {
+        width: 100%;
+    }
+    .principi-right {
+        width: 100%;
+    }
+
+    .komanda-block {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .komanda-block_left {
+        width: 100%;
+    }
+    .komanda-block_right img {
+        width: 100%;
+    }
+    .komanda-btn {
+        width: 100%;
+    }
+
+    /* Страница "Вакансии" */
+    .yslovia-block {
+        flex-direction: column;
+    }
+    .yslovia-left {
+        width: 100%;
+    }
+    .yslovia-grid-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .vacancii-grid-block {
+        grid-template-columns: 1fr;
+    }
+    .vacancii-card {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .vacancii-block-btn {
+        width: 90%;
+    }
+    .vacancii-card-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Блок заявки на странице продукции */
+    .products-zayavka-left {
+        width: 100%;
+        background-color: rgba(10, 36, 15, 0.8);
+    }
+    .zayavka-block {
+        justify-content: flex-start;
+        margin-right: 0;
+        padding-left: 20px;
+    }
+}
+
+
+/* =========================================
+   2. АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ (до 768px)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Типографика */
+    h1 { font-size: 2rem; } /* 32px */
+    h2 { font-size: 1.5rem; } /* 24px */
+    h3 { font-size: 1rem; } /* 16px */
+
+    /* --- ШАПКА В 3 СТРОКИ --- */
+    .site-header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .header_left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    header img {
+        width: 160px;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .header_btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .round_btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem; /* 24px */
+    }
+    
+    .squart_btn {
+        width: 160px;
+        height: 40px;
+        font-size: 0.875rem; /* 14px */
+    }
+
+    /* --- ГЛАВНЫЙ БАННЕР НА ГЛАВНОЙ --- */
+    .hero {
+        min-height: 400px; 
+        background-position: center;
+        display: flex;
+        align-items: center; 
+    }
+    
+    .hero-bg {
+        background-size: cover;
+        background-position: 70% center; 
+    }
+
+    .hero_text {
+        padding-top: 0; 
+        width: 100%;
+    }
+
+    .hero_text h1 {
+        font-size: 1.875rem; /* 30px */
+        line-height: 1.2;
+    }
+
+    .hero_text h3 {
+        font-size: 0.9375rem; /* 15px */
+        margin-top: 10px;
+    }
+
+    .hero_btn {
+        width: 100%; 
+        max-width: 250px;
+    }
+
+    /* --- ОСТАЛЬНЫЕ БЛОКИ НА ГЛАВНОЙ --- */
+    .info_block_card {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .info_card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .info_card_img {
+        margin-bottom: 10px;
+    }
+
+    .info_card_text {
+        justify-items: center;
+    }
+
+    .info_card_text p br {
+        display: none;
+    }
+
+    .about-us_right {
+        display: none;
+    }
+
+    /* Убираем кнопку "вся продукция" на телефоне */
+    .product-text_right {
+        display: none;
+    }
+
+    /* Делаем отступ снизу в карточках на главной */
+    .product-card_text {
+        padding-bottom: 20px;
+    }
+    
+    .products-grid_card-text {
+        padding-bottom: 20px;
+    }
+
+    /* Блок "Почему нам доверяют" */
+    .doverie h2 {
+        text-align: center;
+    }
+
+    .doverie {
+        padding-bottom: 40px;
+    }
+
+    .doverie-block {
+        gap: 40px; 
+        margin-bottom: 0; 
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .doverie-block_card { 
+        width: 100%; 
+    }
+    
+    .product-card-block { grid-template-columns: 1fr; }
+    .products-grid { grid-template-columns: 1fr; }
+    .principi-right_grid { grid-template-columns: 1fr; }
+    .grid-card { align-items: flex-start; }
+    .yslovia-grid-block { grid-template-columns: 1fr; }
+    .yslovia-btn { width: 100%; }
+    .zayavka-text { width: 90%; }
+    .products-zayavka-btn { width: 90%; }
+    .modal-block { padding: 25px 20px; }
+
+
+    /* --- ПОДВАЛ НА ТЕЛЕФОНЕ --- */
+    
+    footer {
+        height: auto; 
+        padding-bottom: 30px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .footer-top_left {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .footer-top_left img {
+        width: 160px;
+        height: auto;
+    }
+
+    .footer-top_left nav {
+        width: 100%;
+    }
+    
+    .footer-top_left ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-top_left ul li a {
+        font-size: 0.875rem;
+    }
+
+    .footer-top_right {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .footer_btn {
+        align-items: center;
+    }
+
+    .footer_address {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+
+    /* --- СТРАНИЦА "О КОМПАНИИ" --- */
+    .aboutus-hero_text {
+        width: 100%; 
+        padding-top: 40px;
+    }
+
+    .aboutus-hero_text h1 {
+        font-size: 2rem; 
+        word-wrap: break-word; 
+        hyphens: auto; 
+    }
+
+    .aboutus-hero_text h3 {
+        width: 100%; 
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .history { height: auto; }
+    .history-block { padding-bottom: 30px; flex-direction: column; gap: 20px; }
+    .history-block_text { width: 100%; }
+    .history-block_left { width: 100%; }
+    .history-block_right img { width: 100%; height: auto; border-radius: 12px; }
+
+    .principi-left { display: none; }
+
+
+    /* --- СТРАНИЦА "ПРОДУКЦИЯ" --- */
+    .products-hero {
+        background-position: 65% center; 
+        min-height: 350px; 
+    }
+
+    .products-hero-text {
+        width: 100%; 
+        padding-top: 40px;
+    }
+
+    .products-hero-text h1 {
+        font-size: 2rem; 
+        word-wrap: break-word; 
+        hyphens: auto;
+        line-height: 1.2;
+    }
+
+    .products-hero-text h3 {
+        width: 100%; 
+        font-size: 1rem;
+        margin-top: 15px;
+        line-height: 1.4;
+    }
+    
+    .products-hero-text h3 br { display: none; }
+
+
+    /* --- СТРАНИЦА "ВАКАНСИИ" --- */
+    .vacancii-hero {
+        background-position: 75% center; 
+        min-height: 350px;
+    }
+
+    .vacancii-hero-text {
+        width: 100%; 
+        padding-top: 40px;
+    }
+
+    .vacancii-hero-text h1 {
+        font-size: 2rem;
+        word-wrap: break-word;
+        hyphens: auto;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .vacancii-hero-text h3 {
+        width: 100%; 
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    .vacancii-hero-text h3 br { display: none; }
+
+    /* 3. Блок с преимуществами (почему стоит работать у нас) */
+    .yslovia-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрируем иконку и текст */
+        text-align: center;  /* Текст по центру */
+        width: 100%;         /* Растягиваем на всю ширину */
+        gap: 10px;
+    }
+
+    .yslovia-card img {
+        width: 60px; /* Задаем единый размер иконкам */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .vacancii-card {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+        /* --- КАРТОЧКИ ВАКАНСИЙ НА ТЕЛЕФОНЕ --- */
+    
+    .vacancii-card {
+        height: auto; /* Убираем жесткую высоту 641px */
+        padding: 0 0 20px 0; /* Убираем отступ сверху, оставляем 20px снизу */
+        gap: 15px; /* Расстояние между элементами внутри */
+        overflow: hidden; 
+        width: 100%;
+    }
+
+    .vacancii-card-img {
+        width: 100%;
+    }
+
+    .vacancii-card-img img {
+        width: 100%;
+        height: 200px; 
+        object-fit: cover; 
+        border-radius: 0; 
+        display: block; 
+    }
+
+    .vacancii-card-text {
+        margin-left: 0; 
+        padding: 15px 15px 0 15px; /* Отступы по бокам и сверху от картинки */
+    }
+
+    .vacancii-block-btn {
+        width: calc(100% - 30px); 
+        margin: 15px auto 0 auto; /* Центрируем. Убрали нижний отступ, так как он есть у карточки */
+    }
+
+    .site-header {
+        position: relative; /* Возвращаем обычное поведение (скроллится вместе со страницей) */
+        top: auto;
+    }
+}
