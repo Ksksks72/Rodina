@@ -1,0 +1,310 @@
+/* =========================================
+   АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ (до 992px)
+   ========================================= */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px; /* Добавляем отступы по бокам, чтобы текст не прилипал к краям */
+    }
+
+    /* Шапка */
+    .site-header .container {
+        width: 100%;
+    }
+    .header_left {
+        gap: 40px;
+    }
+    nav ul {
+        gap: 20px;
+    }
+
+    /* Главный баннер */
+    .hero_text {
+        width: 100%;
+        padding-top: 60px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+
+    /* Блок с преимуществами (иконки) */
+    .info_block_card {
+        flex-wrap: wrap; /* Разрешаем переносить элементы */
+        justify-content: center;
+        gap: 40px;
+    }
+    .info_block_card > img {
+        display: none; /* Скрываем линии-разделители */
+    }
+
+    /* Блок "О компании" */
+    .about-us_block {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about-us_left {
+        width: 100%;
+    }
+    .about-us_right img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Карточки продукции на главной */
+    .product-card-block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .product-card {
+        height: auto; /* Убираем фиксированную высоту */
+    }
+    .product-card a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* Блок доверия (цифры) */
+    .doverie-block {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        height: auto;
+    }
+    .doverie-block > img {
+        display: none;
+    }
+    .doverie-block_card {
+        width: 40%;
+    }
+
+    /* Адрес и карта */
+    .address {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .address-left {
+        width: 100%;
+    }
+    .address-right img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    /* Подвал */
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-top_left {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Сетка карточек продукции на странице products */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .products-grid_card {
+        height: auto;
+    }
+    .products-grid_card-btn {
+        width: 100%;
+    }
+    .products-grid_card-text {
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    /* Страница "О компании" */
+    .history-block {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+    }
+    .history-block_left, .history-block_right {
+        width: 100%;
+    }
+    .history-block_right img {
+        width: 100%;
+    }
+    .history {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    
+    .principi {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .principi-left img {
+        width: 100%;
+    }
+    .principi-right {
+        width: 100%;
+    }
+
+    .komanda-block {
+        flex-direction: column-reverse; /* Картинка сверху, текст снизу */
+        gap: 30px;
+    }
+    .komanda-block_left {
+        width: 100%;
+    }
+    .komanda-block_right img {
+        width: 100%;
+    }
+    .komanda-btn {
+        width: 100%;
+    }
+
+    /* Страница "Вакансии" */
+    .yslovia-block {
+        flex-direction: column;
+    }
+    .yslovia-left {
+        width: 100%;
+    }
+    .yslovia-grid-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .vacancii-grid-block {
+        grid-template-columns: 1fr; /* Одна колонка для вакансий */
+    }
+    .vacancii-card {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .vacancii-block-btn {
+        width: 90%;
+    }
+    .vacancii-card-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Блок заявки на странице продукции */
+    .products-zayavka-left {
+        width: 100%;
+    }
+    .zayavka-block {
+        justify-content: flex-start;
+        margin-right: 0;
+        padding-left: 20px;
+    }
+    .products-zayavka-left {
+        background-color: rgba(10, 36, 15, 0.8); /* Чуть плотнее фон для читаемости */
+    }
+}
+
+
+/* =========================================
+   АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ (до 768px)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Типографика */
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 16px; }
+
+    /* Шапка */
+    .site-header .container {
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+    .header_left {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Главный баннер */
+    .hero {
+        min-height: 350px;
+    }
+    .hero_text {
+        padding-top: 40px;
+    }
+    .hero-bg {
+        background-position: center;
+    }
+
+    /* Преимущества */
+    .info_block_card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Карточки на главной */
+    .product-card-block {
+        grid-template-columns: 1fr; /* В одну колонку */
+    }
+
+    /* Блок доверия */
+    .doverie-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .doverie-block_card {
+        width: 100%;
+    }
+
+    /* Сетка продукции */
+    .products-grid {
+        grid-template-columns: 1fr; /* В одну колонку */
+    }
+
+    /* Сетка принципов (О компании) */
+    .principi-right_grid {
+        grid-template-columns: 1fr;
+    }
+    .grid-card {
+        align-items: flex-start;
+    }
+
+    /* Вакансии */
+    .yslovia-grid-block {
+        grid-template-columns: 1fr;
+    }
+    .yslovia-btn {
+        width: 100%;
+    }
+
+    /* Заявка на странице продукции */
+    .zayavka-text {
+        width: 90%;
+    }
+    .products-zayavka-btn {
+        width: 90%;
+    }
+
+    /* Подвал */
+    .footer-top_right {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* Модальное окно */
+    .modal-block {
+        padding: 25px 20px;
+    }
+}
