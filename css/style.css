@@ -808,3 +808,44 @@ footer nav ul li a.active {
     font-size: 1rem; /* 16px */
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    position: relative; /* Важно для линии */
+    list-style: none;
+}
+
+.nav-link {
+    color: #0C4216;
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+/* Линия */
+.nav-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #4A7B29;
+    width: 0;
+    transition: 0.3s ease; /* Плавность */
+}
+
+/* Цвет активной ссылки */
+.nav-link.active {
+    color: #4A7B29;
+    font-family: Golos-Text_SemiBold;
+}
